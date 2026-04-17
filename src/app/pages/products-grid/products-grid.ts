@@ -4,10 +4,11 @@ import { ProductCard } from '../../components/product-card/product-card';
 import { MatSidenavContainer, MatSidenavContent, MatSidenav } from '@angular/material/sidenav';
 import { MatNavList, MatListItem, MatListItemTitle } from '@angular/material/list';
 import { RouterLink } from "@angular/router";
+import { TitleCasePipe } from '@angular/common';
 
 @Component({
   selector: 'app-products-grid',
-  imports: [ProductCard, MatSidenavContainer, MatSidenavContent, MatSidenav, MatNavList, MatListItem, MatListItemTitle, RouterLink],
+  imports: [ProductCard, MatSidenavContainer, MatSidenavContent, MatSidenav, MatNavList, MatListItem, MatListItemTitle, RouterLink, TitleCasePipe],
   templateUrl: './products-grid.html',
   styleUrl: './products-grid.scss',
 })
