@@ -1,10 +1,13 @@
 import { Component, computed, input, signal } from '@angular/core';
 import { Product } from '../../models/products';
 import { ProductCard } from '../../components/product-card/product-card';
+import { MatSidenavContainer, MatSidenavContent, MatSidenav } from '@angular/material/sidenav';
+import { MatNavList, MatListItem, MatListItemTitle } from '@angular/material/list';
+import { RouterLink } from "@angular/router";
 
 @Component({
   selector: 'app-products-grid',
-  imports: [ProductCard],
+  imports: [ProductCard, MatSidenavContainer, MatSidenavContent, MatSidenav, MatNavList, MatListItem, MatListItemTitle, RouterLink],
   templateUrl: './products-grid.html',
   styleUrl: './products-grid.scss',
 })
@@ -581,4 +584,6 @@ export default class ProductsGrid {
       p => p.category.toLowerCase() === this.category().toLowerCase()
     );
   });
+
+  categories = signal<string[]>(['all',   "electronics", "clothing", "home", "books", "fitness"]);
 }

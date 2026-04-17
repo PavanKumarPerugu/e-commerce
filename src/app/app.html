@@ -7,8 +7,11 @@
 <!-- * * * * * * * to get started with your project! * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
-<app-header></app-header>
-<router-outlet></router-outlet>
+<app-header class = "z-10"></app-header>
+<div class = "h-[calc(100%-64px)] overflow-auto">
+  <router-outlet>
+  </router-outlet>
+</div>
 
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->

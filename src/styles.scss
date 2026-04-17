@@ -5,6 +5,7 @@
 // custom components at https://material.angular.dev/guide/theming
 @use '@angular/material' as mat;
 @use 'tailwindcss';
+@include mat.core();
 
 html {
   @include mat.theme(
@@ -67,7 +68,7 @@ body {
 }
 
 .elevated {
-  box-shadow: var(--mat-sys-level2);
+  box-shadow: var(--mat-elevation-level2);
 }
 
 button[matButton] {
@@ -166,7 +167,6 @@ mat-sidenav {
       active-indicator-color: var(--mat-sys-primary),
       active-indicator-shape: 6px,
       list-item-one-line-container-height: 40px,
-      list-item-label-text-color: red,
     )
   );
 }
