@@ -3,12 +3,14 @@ import { Product } from "./models/products";
 import { signalStore, withState, withMethods, withComputed, patchState, signalMethod } from "@ngrx/signals";
 import { produce } from "immer";
 import { Toaster } from "./services/toaster";
+import { CartItem } from "./models/cart";
 
 
 export type EcommerceState = {
     products: Product[];
     category: string;
     wishlistItems: Product[];
+    cartItems: CartItem[];
 }
 
 export const ECommerceStore = signalStore(
@@ -579,15 +581,17 @@ export const ECommerceStore = signalStore(
         ],
         category: "all",
         wishlistItems: <Product[]>[],
+        cartItems: <CartItem[]>[],
     }),
-    withComputed( ({ category, products, wishlistItems }) => ({
+    withComputed( ({ category, products, wishlistItems, cartItems }) => ({
         filteredProducts: computed<Product[]>(() => {
             if (category() === 'all') return products();
             return products().filter(
                 p => p.category.toLowerCase() === category().toLowerCase()
             );
         }),
-        wishlistCount: computed(() => wishlistItems().length)
+        wishlistCount: computed(() => wishlistItems().length),
+        cartCount: computed(() => cartItems().reduce((total, item) => total + item.quantity, 0)),
     })),
     withMethods((store, toaster = inject(Toaster)) => ({
         setCategory: signalMethod<string>((category: string) => {
@@ -612,6 +616,55 @@ export const ECommerceStore = signalStore(
         clearWishlist: () => {
             patchState(store, { wishlistItems: [] });
             toaster.success('Wishlist cleared');
+        },
+        addToCart: (product: Product, quantity = 1) => {
+            const existingItemIndex = store.cartItems().findIndex(items => items.product.id === product.id);
+                const updatedCartItems = produce(store.cartItems(), (draft: CartItem[]) => {
+                    if (existingItemIndex >= 0) {
+                        draft[existingItemIndex].quantity += quantity;
+                        return;
+                    } else {
+                        draft.push({ product, quantity });
+                    }
+                });
+            patchState(store, { cartItems: updatedCartItems });
+            toaster.success(existingItemIndex >= 0 ? 'Product quantity updated in Cart' : 'Product added to Cart');
+        },
+        setItemQuantity(params: { productId: string, quantity: number }) {
+            const index = store.cartItems().findIndex(item => item.product.id === params.productId);
+            const updated = produce(store.cartItems(), (draft: CartItem[]) => {
+                draft[index].quantity = params.quantity;
+            });
+            patchState(store, { cartItems: updated });
+            toaster.success('Cart item quantity updated');
+        },
+        addAllWishlistToCart: () => {
+            const updatedCartItems = produce(store.cartItems(), (draft: CartItem[]) => {
+                store.wishlistItems().forEach(p => {
+                    if (!draft.find(item => item.product.id === p.id)) {
+                        draft.push({ product: p, quantity: 1 });
+                    }
+                });
+            });
+            patchState(store, { cartItems: updatedCartItems, wishlistItems: [] });
+            toaster.success('All wishlist items added to cart');
+        },
+        moveTowishlist: (product: Product) => {
+            const updatedCartItems = store.cartItems().filter( item => item.product.id !== product.id );
+            const updatedWishlistItems = produce(store.wishlistItems(), (draft: Product[]) => {
+                if (!draft.find(p => p.id === product.id)) {
+                    draft.push(product);
+                }
+            });
+            patchState(store, { cartItems: updatedCartItems, wishlistItems: updatedWishlistItems });
+            toaster.success('Product moved to Wishlist');
+        },
+        removeFromCart: (product: Product) => {
+            patchState(store, {
+                cartItems: store.cartItems().filter( item => item.product.id !== product.id )
+            });
+            toaster.success('Product removed from Cart');
         }
     })),
 );
+
