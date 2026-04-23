@@ -5,21 +5,23 @@ import { NonNullableFormBuilder, ReactiveFormsModule, Validators } from '@angula
 import { MatFormField, MatPrefix } from "@angular/material/form-field";
 import { MatInput } from "@angular/material/input";
 import { MatSuffix } from "@angular/material/form-field";
-import { MAT_DIALOG_DATA, MatDialogModule, MatDialogRef } from '@angular/material/dialog';
+import { MAT_DIALOG_DATA, MatDialog, MatDialogModule, MatDialogRef } from '@angular/material/dialog';
 import { SignInParams } from '../../models/user';
 import { ECommerceStore } from '../../e-commerce-store';
+import { SignUpDialog } from '../sign-up-dialog/sign-up-dialog';
 
 @Component({
   selector: 'app-sign-in-dialog',
   imports: [MatIconButton, MatIcon, MatFormField, MatInput, MatSuffix, MatPrefix, MatButton, MatDialogModule, ReactiveFormsModule],
-  templateUrl: './sign-in-dialog.html',
+templateUrl: './sign-in-dialog.html',
   styleUrl: './sign-in-dialog.scss',
 })
 export class SignInDialog {
   fb = inject(NonNullableFormBuilder);
   store = inject(ECommerceStore);
-  data = inject<{ chackout: boolean }>(MAT_DIALOG_DATA);
+  data = inject<{ checkout: boolean }>(MAT_DIALOG_DATA);
   dialogRef = inject(MatDialogRef);
+  dialog = inject(MatDialog);
   passwordVisible = signal(false);
   signInForm = this.fb.group({
     email: ['elico@ltd.com', Validators.required],
@@ -32,6 +34,15 @@ export class SignInDialog {
     }
     const { email, password } = this.signInForm.value;
     console.log('Signing in with', { email });
-    this.store.signIn({email, password, checkout: this.data.chackout, dialogId: this.dialogRef.id } as SignInParams);
+    this.store.signIn({email, password, checkout: this.data.checkout, dialogId: this.dialogRef.id } as SignInParams);
+  }
+  openSignUpDialog() {
+    this.dialogRef.close();
+    this.dialog.open(SignUpDialog, {
+      disableClose: true,
+      data: { 
+        checkout: this.data.checkout,
+      }
+    });
   }
 }

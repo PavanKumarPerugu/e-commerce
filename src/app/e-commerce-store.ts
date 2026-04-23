@@ -6,7 +6,7 @@ import { Toaster } from "./services/toaster";
 import { CartItem } from "./models/cart";
 import { MatDialog } from "@angular/material/dialog";
 import { SignInDialog } from "./components/sign-in-dialog/sign-in-dialog";
-import { SignInParams, User } from "./models/user";
+import { SignInParams, SignUpParams, User } from "./models/user";
 import { Router } from "@angular/router";
 
 
@@ -675,7 +675,7 @@ export const ECommerceStore = signalStore(
             matDialog.open(SignInDialog, {
                 disableClose: true,
                 data: {
-                    chackout: true,
+                    checkout: true,
                 }
             });
         },
@@ -698,6 +698,25 @@ export const ECommerceStore = signalStore(
                 router.navigate(['/']);
             }
         },
+        SignUp: ({ name, email, password, checkout, dialogId }: SignUpParams) => {
+            patchState(store, {
+                user: {
+                    id: 1,
+                    name,
+                    email,
+                    imageUrl: 'https://randomuser.me/api/portraits/men/1.jpg', 
+                }
+            });
+            toaster.success('Account created and signed in successfully');
+            matDialog.getDialogById(dialogId)?.close();
+            if (checkout) {
+                router.navigate(['/checkout']);
+            }
+        },
+        signOut: () => {
+            patchState(store, { user: undefined });
+            toaster.success('Signed out successfully');
+        }
     })),
 );
 

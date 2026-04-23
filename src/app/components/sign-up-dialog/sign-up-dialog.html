@@ -1,1 +1,42 @@
-<p>sign-up-dialog works!</p>
+<div class="p-8 max-w-[400px] flex flex-col">
+    <div class="flex justify-between">
+        <div>
+            <h2 class="text-xl font-medium mb-1">Sign Up</h2>
+            <p class="text-gray-500 text-sm">Create an account and start shopping today!</p>
+        </div>
+        <button tabindex="-1" matIconButton class="-mt-2 -mr-2" mat-dialog-close>
+            <mat-icon>close</mat-icon>
+        </button>
+    </div>
+    <form [formGroup]="signUpForm" (ngSubmit)="signUp()" class="mt-6 flex flex-col">
+        <mat-form-field class="mb-4">
+            <input matInput formControlName="name" type="text" placeholder="Enter your Name"/>
+            <mat-icon matPrefix>person</mat-icon>
+        </mat-form-field>
+        <mat-form-field class="mb-4">
+            <input matInput formControlName="email" type="email" placeholder="Enter your Email"/>
+            <mat-icon matPrefix>email</mat-icon>
+        </mat-form-field>
+        <mat-form-field class="mb-4">
+            <input matInput formControlName="password" [type]="passwordVisible() ? 'text' : 'password'" placeholder="Enter your Password"/>
+            <mat-icon matPrefix>lock</mat-icon>
+            <button matSuffix matIconButton type="button" class="mr-2" (click)="passwordVisible.set(!passwordVisible())">
+                <mat-icon [fontIcon]="passwordVisible() ? 'visibility_off' : 'visibility'"></mat-icon>
+            </button>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput formControlName="confirmPassword" [type]="confirmPasswordVisible() ? 'text' : 'password'" placeholder="Confirm your Password"/>
+            <mat-icon matPrefix>lock</mat-icon>
+            <button matSuffix matIconButton type="button" class="mr-2" (click)="confirmPasswordVisible.set(!confirmPasswordVisible())">
+                <mat-icon [fontIcon]="confirmPasswordVisible() ? 'visibility_off' : 'visibility'"></mat-icon>
+            </button>
+        </mat-form-field>
+        <button type="submit" matButton="filled" class="w-full mt-6">
+            Create Account
+        </button>
+    </form>
+    <p class="text-center text-sm text-gray-500 mt-4">
+        Already have an account? 
+        <a class="text-blue-600 cursor-pointer" (click)="openSignInDialog()">Sign In</a>
+    </p>
+</div>
