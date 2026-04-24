@@ -193,3 +193,11 @@ mat-sidenav {
   grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
   gap: 1rem;
 }
+
+.company-name {
+  font-size: 2rem;
+  font-weight: 1000;
+  color: var(--mat-sys-primary);
+  letter-spacing: 7.5px;
+  text-transform: uppercase;
+}

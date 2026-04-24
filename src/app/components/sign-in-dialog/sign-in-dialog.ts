@@ -34,14 +34,14 @@ export class SignInDialog {
     }
     const { email, password } = this.signInForm.value;
     console.log('Signing in with', { email });
-    this.store.signIn({email, password, checkout: this.data.checkout, dialogId: this.dialogRef.id } as SignInParams);
+    this.store.signIn({email, password, checkout: this.data?.checkout, dialogId: this.dialogRef.id } as SignInParams);
   }
   openSignUpDialog() {
     this.dialogRef.close();
     this.dialog.open(SignUpDialog, {
       disableClose: true,
       data: { 
-        checkout: this.data.checkout,
+        checkout: this.data?.checkout,
       }
     });
   }

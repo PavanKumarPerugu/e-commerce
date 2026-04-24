@@ -35,14 +35,14 @@ export class SignUpDialog {
         return;
       }
       const { name, email, password } = this.signUpForm.value; 
-      this.store.SignUp({name, email, password, dialogId: this.dialogRef.id} as SignUpParams);
+      this.store.SignUp({name, email, password, checkout: this.data?.checkout, dialogId: this.dialogRef.id} as SignUpParams);
   }
   openSignInDialog() {
     this.dialogRef.close();
     this.matDialog.open(SignInDialog, {
       disableClose: true,
       data: { 
-        checkout: this.data.checkout,
+        checkout: this.data?.checkout,
       }
     });
   }

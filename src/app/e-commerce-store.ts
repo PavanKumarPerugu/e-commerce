@@ -8,6 +8,7 @@ import { MatDialog } from "@angular/material/dialog";
 import { SignInDialog } from "./components/sign-in-dialog/sign-in-dialog";
 import { SignInParams, SignUpParams, User } from "./models/user";
 import { Router } from "@angular/router";
+import { Order } from "./models/order";
 
 
 export type EcommerceState = {
@@ -16,6 +17,7 @@ export type EcommerceState = {
     wishlistItems: Product[];
     cartItems: CartItem[];
     user: User | undefined;
+    loading: boolean;
 }
 
 export const ECommerceStore = signalStore(
@@ -588,6 +590,7 @@ export const ECommerceStore = signalStore(
         wishlistItems: <Product[]>[],
         cartItems: <CartItem[]>[],
         user: undefined,
+        loading: false,
     }),
     withComputed( ({ category, products, wishlistItems, cartItems }) => ({
         filteredProducts: computed<Product[]>(() => {
@@ -672,12 +675,36 @@ export const ECommerceStore = signalStore(
             toaster.success('Product removed from Cart');
         },
         proceedToCheckout: () => {
+            if (!store.user()) {
             matDialog.open(SignInDialog, {
                 disableClose: true,
                 data: {
                     checkout: true,
                 }
             });
+            } else {
+                router.navigate(['/checkout']);
+            }
+        },
+        placeOrder: async () => {
+            patchState(store, { loading: true });
+            const user = store.user();
+            if (!user) {
+                toaster.error('User not authenticated');
+                patchState(store, { loading: false });
+                return;
+            }
+            const order: Order = {
+                id: crypto.randomUUID(),
+                userId: user?.id?.toString() || '',
+                total: Math.round(store.cartItems().reduce((acc, item) => acc + item.product.price * item.quantity, 0) * 100),
+                items: store.cartItems(),
+                paymentStatus: 'success',
+            };
+            await new Promise(resolve => setTimeout(resolve, 1000));
+            patchState(store, { cartItems: [], loading: false });
+            toaster.success('Order placed successfully'); 
+            router.navigate(['order-success']);
         },
         signIn: ({ email, password, checkout, dialogId }: SignInParams) => {
             patchState(store, {
@@ -694,8 +721,6 @@ export const ECommerceStore = signalStore(
 
             if (checkout) {
                 router.navigate(['/checkout']);
-            } else {
-                router.navigate(['/']);
             }
         },
         SignUp: ({ name, email, password, checkout, dialogId }: SignUpParams) => {
@@ -716,6 +741,7 @@ export const ECommerceStore = signalStore(
         signOut: () => {
             patchState(store, { user: undefined });
             toaster.success('Signed out successfully');
+            router.navigate(['/']);
         }
     })),
 );
