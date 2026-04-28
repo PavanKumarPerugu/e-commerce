@@ -3,10 +3,11 @@ import { ECommerceStore } from '../../e-commerce-store';
 import { Product } from '../../models/products';
 import { MatIconButton } from '@angular/material/button';
 import { MatIcon } from '@angular/material/icon';
+import { NgClass } from '@angular/common';
 
 @Component({
   selector: 'app-toggle-wishlist-button',
-  imports: [ MatIconButton, MatIcon],
+  imports: [ MatIconButton, MatIcon, NgClass],
   templateUrl: './toggle-wishlist-button.html',
   styleUrl: './toggle-wishlist-button.scss',
 })

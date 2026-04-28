@@ -4,10 +4,11 @@ import { QtySelector } from "../../components/qty-selector/qty-selector";
 import { ECommerceStore } from '../../e-commerce-store';
 import { MatIcon } from "@angular/material/icon";
 import { MatIconButton } from '@angular/material/button';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-show-cart-item',
-  imports: [QtySelector, MatIcon, MatIconButton],
+  imports: [QtySelector, MatIcon, MatIconButton, RouterLink],
   templateUrl: './show-cart-item.html',
   styleUrl: './show-cart-item.scss',
 })
