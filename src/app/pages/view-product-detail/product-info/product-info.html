@@ -13,10 +13,14 @@
 <div class="flex gap-4 mb border-b border-gray-200 pb-4">
     <button matButton="filled" class="w-2/3 flex items-center gap-2" (click)="store.addToCart(product(), quantity())" [disabled]="!product().inStock" [routerLink]="['/checkout']">
         <mat-icon>payment</mat-icon>
-        Buy Now
+        {{product().inStock ? 'Buy Now' : 'Buy Later'}}
     </button>
     <button matButton="filled" class="w-2/3 flex items-center gap-2" (click)="store.addToCart(product(), quantity())" [disabled]="!product().inStock" >
         <mat-icon>shopping_cart</mat-icon>
-        Add to Cart
+        {{product().inStock ? 'Add to Cart' : 'Out of Stock'}}
+    </button>
+    <app-toggle-wishlist-button [product]="product()"/>
+    <button matIconButton>
+        <mat-icon>share</mat-icon>
     </button>
 </div>
