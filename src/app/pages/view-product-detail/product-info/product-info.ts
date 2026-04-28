@@ -8,10 +8,11 @@ import { ECommerceStore } from '../../../e-commerce-store';
 import { MatIcon } from "@angular/material/icon";
 import { MatButtonModule } from '@angular/material/button';
 import { ToggleWishlistButton } from "../../../components/toggle-wishlist-button/toggle-wishlist-button";
+import { StarRating } from "../../../components/star-rating/star-rating";
 
 @Component({
   selector: 'app-product-info',
-  imports: [TitleCasePipe, StockStatus, QtySelector, RouterLink, MatIcon, MatButtonModule, ToggleWishlistButton],
+  imports: [TitleCasePipe, StockStatus, QtySelector, RouterLink, MatIcon, MatButtonModule, ToggleWishlistButton, StarRating],
   templateUrl: './product-info.html',
   styleUrl: './product-info.scss',
 })

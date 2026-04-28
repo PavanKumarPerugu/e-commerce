@@ -1,3 +1,5 @@
+import { UserReview } from "./user-review";
+
 export interface Product {
   id: string;
   name: string;
@@ -9,4 +11,5 @@ export interface Product {
   reviewCount: number;
   inStock: boolean;
   category: string;
+  reviews: UserReview[];
 }

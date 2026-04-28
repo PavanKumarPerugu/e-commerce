@@ -6,7 +6,9 @@
     <div class = "p-5 flex flex-col flex-1">
         <h3 class = "text-lg font-semibold text-gray-900 mb-2 leading-tight" [routerLink]="['/product', product().id]">{{ product().name }}</h3>
         <p class = "text-sm text-gray-600 mb-4 flex-1 leading-relaxed">{{ product().description }}</p>
-        <!-- add reting component-->
+        <app-star-rating [rating]="product().rating" class = "mb-4">
+            ({{ product().reviewCount }}) 
+        </app-star-rating>
         <div class="text-sm font-medium mb-4" [ngClass]="product().inStock ? 'text-green-600' : 'text-red-600'">
             {{ product().inStock ? 'In Stock' : 'Out of Stock' }}
         </div>
