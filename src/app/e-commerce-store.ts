@@ -9,6 +9,7 @@ import { SignInDialog } from "./components/sign-in-dialog/sign-in-dialog";
 import { SignInParams, SignUpParams, User } from "./models/user";
 import { Router } from "@angular/router";
 import { Order } from "./models/order";
+import { AddReviewParams, UserReview } from "./models/user-review";
 
 
 export type EcommerceState = {
@@ -19,6 +20,7 @@ export type EcommerceState = {
     user: User | undefined;
     loading: boolean;
     selectedProductId: string | undefined;
+    writeReview: boolean;
 }
 
 export const ECommerceStore = signalStore(
@@ -1743,6 +1745,7 @@ export const ECommerceStore = signalStore(
         user: undefined,
         loading: false,
         selectedProductId: undefined,
+        writeReview:false,
     }),
     withComputed(({ category, products, wishlistItems, cartItems, selectedProductId }) => ({
         filteredProducts: computed<Product[]>(() => {
@@ -1904,7 +1907,42 @@ export const ECommerceStore = signalStore(
             patchState(store, { user: undefined });
             toaster.success('Signed out successfully');
             router.navigate(['/']);
-        }
+        },
+        showWriteReview: () => {
+            patchState(store, {writeReview: true});
+        },
+        hideWriteReview: () => {
+            patchState(store, {writeReview: false});
+        },
+        addReview: async ({title, comment, rating}: AddReviewParams) => {
+            patchState(store, {loading: true});
+            const product = store.products().find((p) => p.id === store.selectedProductId());
+            if (!product){
+                patchState(store, {loading: false});
+                return;
+            };
+            const review: UserReview = {
+                id: crypto.randomUUID(),
+                title,
+                comment,
+                rating,
+                productId: product.id,
+                userName: store.user()?.name || '',
+                userImageUrl: store.user()?.imageUrl || '',
+                reviewDate: new Date(),
+            };
+            const updatedProducts = produce(store.products(), (draft) =>{
+                const index = draft.findIndex((p) => p.id === product.id);
+                draft[index].reviews.push(review);
+                draft[index].rating = 
+                Math.round(
+                    (draft[index].reviews.reduce((acc, r) => acc + r.rating, 0) / 
+                        draft[index].reviews.length) *
+                        10,
+                    ) / 10;
+                draft[index].reviewCount = draft[index].reviews.length;
+            });
+        },
     })),
 );
 
