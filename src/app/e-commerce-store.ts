@@ -42,8 +42,8 @@ export const ECommerceStore = signalStore(
                 category: "Electronics",
                 reviews: [
                     {
-                        id: 1,
-                        productId: 1,
+                        id: "1",
+                        productId: "1",
                         userName: "Rahul Sharma",
                         userImageUrl: "/users/user1.png",
                         rating: 5,
@@ -52,8 +52,8 @@ export const ECommerceStore = signalStore(
                         reviewDate: new Date("2025-05-10")
                     },
                     {
-                        id: 2,
-                        productId: 1,
+                        id: "2",
+                        productId: "1",
                         userName: "Priya Verma",
                         userImageUrl: "/users/user2.png",
                         rating: 4,
@@ -76,8 +76,8 @@ export const ECommerceStore = signalStore(
                 category: "Electronics",
                 reviews: [
                     {
-                        id: 3,
-                        productId: 2,
+                        id: "3",
+                        productId: "2",
                         userName: "Amit Patel",
                         userImageUrl: "/users/user3.png",
                         rating: 5,
@@ -86,8 +86,8 @@ export const ECommerceStore = signalStore(
                         reviewDate: new Date("2025-07-15")
                     },
                     {
-                        id: 4,
-                        productId: 2,
+                        id: "4",
+                        productId: "2",
                         userName: "Sneha Reddy",
                         userImageUrl: "/users/user4.png",
                         rating: 4,
@@ -110,8 +110,8 @@ export const ECommerceStore = signalStore(
                 category: "Electronics",
                 reviews: [
                     {
-                        id: 5,
-                        productId: 3,
+                        id: "5",
+                        productId: "3",
                         userName: "Karan Mehta",
                         userImageUrl: "/users/user5.png",
                         rating: 4,
@@ -120,8 +120,8 @@ export const ECommerceStore = signalStore(
                         reviewDate: new Date("2025-04-12")
                     },
                     {
-                        id: 6,
-                        productId: 3,
+                        id: "6",
+                        productId: "3",
                         userName: "Neha Kapoor",
                         userImageUrl: "/users/user6.png",
                         rating: 3,
@@ -144,8 +144,8 @@ export const ECommerceStore = signalStore(
                 category: "Electronics",
                 reviews: [
                     {
-                        id: 7,
-                        productId: 4,
+                        id: "7",
+                        productId: "4",
                         userName: "Arjun Nair",
                         userImageUrl: "/users/user7.png",
                         rating: 5,
@@ -154,8 +154,8 @@ export const ECommerceStore = signalStore(
                         reviewDate: new Date("2025-03-10")
                     },
                     {
-                        id: 8,
-                        productId: 4,
+                        id: "8",
+                        productId: "4",
                         userName: "Divya Singh",
                         userImageUrl: "/users/user8.png",
                         rating: 4,
@@ -178,8 +178,8 @@ export const ECommerceStore = signalStore(
                 category: "Electronics",
                 reviews: [
                     {
-                        id: 9,
-                        productId: 5,
+                        id: "9",
+                        productId: "5",
                         userName: "Ravi Kumar",
                         userImageUrl: "/users/user9.png",
                         rating: 5,
@@ -188,8 +188,8 @@ export const ECommerceStore = signalStore(
                         reviewDate: new Date("2025-06-01")
                     },
                     {
-                        id: 10,
-                        productId: 5,
+                        id: "10",
+                        productId: "5",
                         userName: "Anjali Gupta",
                         userImageUrl: "/users/user10.png",
                         rating: 4,
@@ -212,8 +212,8 @@ export const ECommerceStore = signalStore(
                 category: "Electronics",
                 reviews: [
                     {
-                        id: 11,
-                        productId: 6,
+                        id: "11",
+                        productId: "6",
                         userName: "Manish Jain",
                         userImageUrl: "/users/user11.png",
                         rating: 5,
@@ -222,8 +222,8 @@ export const ECommerceStore = signalStore(
                         reviewDate: new Date("2025-02-20")
                     },
                     {
-                        id: 12,
-                        productId: 6,
+                        id: "12",
+                        productId: "6",
                         userName: "Pooja Shah",
                         userImageUrl: "/users/user12.png",
                         rating: 4,
@@ -246,8 +246,8 @@ export const ECommerceStore = signalStore(
                 category: "Electronics",
                 reviews: [
                     {
-                        id: 13,
-                        productId: 7,
+                        id: "13",
+                        productId: "7",
                         userName: "Vikas Rao",
                         userImageUrl: "/users/user13.png",
                         rating: 4,
@@ -256,8 +256,8 @@ export const ECommerceStore = signalStore(
                         reviewDate: new Date("2025-01-10")
                     },
                     {
-                        id: 14,
-                        productId: 7,
+                        id: "14",
+                        productId: "7",
                         userName: "Meena Iyer",
                         userImageUrl: "/users/user14.png",
                         rating: 3,
@@ -280,8 +280,8 @@ export const ECommerceStore = signalStore(
                 category: "Electronics",
                 reviews: [
                     {
-                        id: 15,
-                        productId: 8,
+                        id: "15",
+                        productId: "8",
                         userName: "Rohit Das",
                         userImageUrl: "/users/user15.png",
                         rating: 5,
@@ -290,8 +290,8 @@ export const ECommerceStore = signalStore(
                         reviewDate: new Date("2025-03-01")
                     },
                     {
-                        id: 16,
-                        productId: 8,
+                        id: "16",
+                        productId: "8",
                         userName: "Simran Kaur",
                         userImageUrl: "/users/user16.png",
                         rating: 4,
@@ -314,8 +314,8 @@ export const ECommerceStore = signalStore(
                 category: "Electronics",
                 reviews: [
                     {
-                        id: 17,
-                        productId: 9,
+                        id: "17",
+                        productId: "9",
                         userName: "Sanjay Verma",
                         userImageUrl: "/users/user17.png",
                         rating: 5,
@@ -324,8 +324,8 @@ export const ECommerceStore = signalStore(
                         reviewDate: new Date("2025-02-01")
                     },
                     {
-                        id: 18,
-                        productId: 9,
+                        id: "18",
+                        productId: "9",
                         userName: "Nikita Arora",
                         userImageUrl: "/users/user18.png",
                         rating: 4,
@@ -348,8 +348,8 @@ export const ECommerceStore = signalStore(
                 category: "Electronics",
                 reviews: [
                     {
-                        id: 19,
-                        productId: 10,
+                        id: "19",
+                        productId: "10",
                         userName: "Aakash Singh",
                         userImageUrl: "/users/user19.png",
                         rating: 4,
@@ -358,8 +358,8 @@ export const ECommerceStore = signalStore(
                         reviewDate: new Date("2025-01-12")
                     },
                     {
-                        id: 20,
-                        productId: 10,
+                        id: "20",
+                        productId: "10",
                         userName: "Riya Sharma",
                         userImageUrl: "/users/user20.png",
                         rating: 3,
@@ -371,7 +371,7 @@ export const ECommerceStore = signalStore(
             },
 
             // 👉 11–15 (Clothing)
-
+            
             {
                 id: "11",
                 name: "Men's Cotton T-Shirt",
@@ -385,8 +385,8 @@ export const ECommerceStore = signalStore(
                 category: "Clothing",
                 reviews: [
                     {
-                        id: 21,
-                        productId: 11,
+                        id: "21",
+                        productId: "11",
                         userName: "Vivek Sharma",
                         userImageUrl: "/users/user21.png",
                         rating: 4,
@@ -395,8 +395,8 @@ export const ECommerceStore = signalStore(
                         reviewDate: new Date("2025-03-01")
                     },
                     {
-                        id: 22,
-                        productId: 11,
+                        id: "22",
+                        productId: "11",
                         userName: "Kunal Joshi",
                         userImageUrl: "/users/user22.png",
                         rating: 3,
@@ -419,8 +419,8 @@ export const ECommerceStore = signalStore(
                 category: "Clothing",
                 reviews: [
                     {
-                        id: 23,
-                        productId: 12,
+                        id: "23",
+                        productId: "12",
                         userName: "Neha Sharma",
                         userImageUrl: "/users/user23.png",
                         rating: 5,
@@ -429,8 +429,8 @@ export const ECommerceStore = signalStore(
                         reviewDate: new Date("2025-04-01")
                     },
                     {
-                        id: 24,
-                        productId: 12,
+                        id: "24",
+                        productId: "12",
                         userName: "Ritu Singh",
                         userImageUrl: "/users/user24.png",
                         rating: 4,
@@ -453,8 +453,8 @@ export const ECommerceStore = signalStore(
                 category: "Clothing",
                 reviews: [
                     {
-                        id: 25,
-                        productId: 13,
+                        id: "25",
+                        productId: "13",
                         userName: "Ajay Kumar",
                         userImageUrl: "/users/user25.png",
                         rating: 5,
@@ -463,8 +463,8 @@ export const ECommerceStore = signalStore(
                         reviewDate: new Date("2025-02-15")
                     },
                     {
-                        id: 26,
-                        productId: 13,
+                        id: "26",
+                        productId: "13",
                         userName: "Suresh Reddy",
                         userImageUrl: "/users/user26.png",
                         rating: 4,
@@ -487,8 +487,8 @@ export const ECommerceStore = signalStore(
                 category: "Clothing",
                 reviews: [
                     {
-                        id: 27,
-                        productId: 14,
+                        id: "27",
+                        productId: "14",
                         userName: "Rahul Das",
                         userImageUrl: "/users/user27.png",
                         rating: 5,
@@ -497,8 +497,8 @@ export const ECommerceStore = signalStore(
                         reviewDate: new Date("2025-01-10")
                     },
                     {
-                        id: 28,
-                        productId: 14,
+                        id: "28",
+                        productId: "14",
                         userName: "Kiran Patel",
                         userImageUrl: "/users/user28.png",
                         rating: 4,
@@ -521,8 +521,8 @@ export const ECommerceStore = signalStore(
                 category: "Clothing",
                 reviews: [
                     {
-                        id: 29,
-                        productId: 15,
+                        id: "29",
+                        productId: "15",
                         userName: "Rakesh Verma",
                         userImageUrl: "/users/user29.png",
                         rating: 4,
@@ -531,8 +531,8 @@ export const ECommerceStore = signalStore(
                         reviewDate: new Date("2025-02-01")
                     },
                     {
-                        id: 30,
-                        productId: 15,
+                        id: "30",
+                        productId: "15",
                         userName: "Aman Gupta",
                         userImageUrl: "/users/user30.png",
                         rating: 3,
@@ -555,8 +555,8 @@ export const ECommerceStore = signalStore(
                 category: "Clothing",
                 reviews: [
                     {
-                        id: 31,
-                        productId: 16,
+                        id: "31",
+                        productId: "16",
                         userName: "Nikhil Sharma",
                         userImageUrl: "/users/user31.png",
                         rating: 5,
@@ -565,8 +565,8 @@ export const ECommerceStore = signalStore(
                         reviewDate: new Date("2025-03-12")
                     },
                     {
-                        id: 32,
-                        productId: 16,
+                        id: "32",
+                        productId: "16",
                         userName: "Rohit Verma",
                         userImageUrl: "/users/user32.png",
                         rating: 4,
@@ -589,8 +589,8 @@ export const ECommerceStore = signalStore(
                 category: "Clothing",
                 reviews: [
                     {
-                        id: 33,
-                        productId: 17,
+                        id: "33",
+                        productId: "17",
                         userName: "Amit Singh",
                         userImageUrl: "/users/user33.png",
                         rating: 4,
@@ -599,8 +599,8 @@ export const ECommerceStore = signalStore(
                         reviewDate: new Date("2025-02-20")
                     },
                     {
-                        id: 34,
-                        productId: 17,
+                        id: "34",
+                        productId: "17",
                         userName: "Deepak Kumar",
                         userImageUrl: "/users/user34.png",
                         rating: 3,
@@ -623,8 +623,8 @@ export const ECommerceStore = signalStore(
                 category: "Clothing",
                 reviews: [
                     {
-                        id: 35,
-                        productId: 18,
+                        id: "35",
+                        productId: "18",
                         userName: "Sanjay Gupta",
                         userImageUrl: "/users/user35.png",
                         rating: 4,
@@ -633,8 +633,8 @@ export const ECommerceStore = signalStore(
                         reviewDate: new Date("2025-04-01")
                     },
                     {
-                        id: 36,
-                        productId: 18,
+                        id: "36",
+                        productId: "18",
                         userName: "Vikram Joshi",
                         userImageUrl: "/users/user36.png",
                         rating: 3,
@@ -657,8 +657,8 @@ export const ECommerceStore = signalStore(
                 category: "Clothing",
                 reviews: [
                     {
-                        id: 37,
-                        productId: 19,
+                        id: "37",
+                        productId: "19",
                         userName: "Ravi Sharma",
                         userImageUrl: "/users/user37.png",
                         rating: 4,
@@ -667,8 +667,8 @@ export const ECommerceStore = signalStore(
                         reviewDate: new Date("2025-01-10")
                     },
                     {
-                        id: 38,
-                        productId: 19,
+                        id: "38",
+                        productId: "19",
                         userName: "Mohit Arora",
                         userImageUrl: "/users/user38.png",
                         rating: 3,
@@ -691,8 +691,8 @@ export const ECommerceStore = signalStore(
                 category: "Clothing",
                 reviews: [
                     {
-                        id: 39,
-                        productId: 20,
+                        id: "39",
+                        productId: "20",
                         userName: "Aman Verma",
                         userImageUrl: "/users/user39.png",
                         rating: 5,
@@ -701,8 +701,8 @@ export const ECommerceStore = signalStore(
                         reviewDate: new Date("2025-02-10")
                     },
                     {
-                        id: 40,
-                        productId: 20,
+                        id: "40",
+                        productId: "20",
                         userName: "Ritesh Singh",
                         userImageUrl: "/users/user40.png",
                         rating: 4,
@@ -712,8 +712,7 @@ export const ECommerceStore = signalStore(
                     }
                 ]
             },
-
-            // HOME (21–30)
+            // HOME (21–25)
 
             {
                 id: "21",
@@ -728,8 +727,8 @@ export const ECommerceStore = signalStore(
                 category: "Home",
                 reviews: [
                     {
-                        id: 41,
-                        productId: 21,
+                        id: "41",
+                        productId: "21",
                         userName: "Suresh Kumar",
                         userImageUrl: "/users/user41.png",
                         rating: 4,
@@ -738,8 +737,8 @@ export const ECommerceStore = signalStore(
                         reviewDate: new Date("2025-03-01")
                     },
                     {
-                        id: 42,
-                        productId: 21,
+                        id: "42",
+                        productId: "21",
                         userName: "Anita Sharma",
                         userImageUrl: "/users/user42.png",
                         rating: 3,
@@ -762,8 +761,8 @@ export const ECommerceStore = signalStore(
                 category: "Home",
                 reviews: [
                     {
-                        id: 43,
-                        productId: 22,
+                        id: "43",
+                        productId: "22",
                         userName: "Ravi Patel",
                         userImageUrl: "/users/user43.png",
                         rating: 5,
@@ -772,8 +771,8 @@ export const ECommerceStore = signalStore(
                         reviewDate: new Date("2025-01-20")
                     },
                     {
-                        id: 44,
-                        productId: 22,
+                        id: "44",
+                        productId: "22",
                         userName: "Meera Shah",
                         userImageUrl: "/users/user44.png",
                         rating: 4,
@@ -796,8 +795,8 @@ export const ECommerceStore = signalStore(
                 category: "Home",
                 reviews: [
                     {
-                        id: 45,
-                        productId: 23,
+                        id: "45",
+                        productId: "23",
                         userName: "Kavita Sharma",
                         userImageUrl: "/users/user45.png",
                         rating: 5,
@@ -806,8 +805,8 @@ export const ECommerceStore = signalStore(
                         reviewDate: new Date("2025-02-14")
                     },
                     {
-                        id: 46,
-                        productId: 23,
+                        id: "46",
+                        productId: "23",
                         userName: "Pankaj Verma",
                         userImageUrl: "/users/user46.png",
                         rating: 4,
@@ -830,8 +829,8 @@ export const ECommerceStore = signalStore(
                 category: "Home",
                 reviews: [
                     {
-                        id: 47,
-                        productId: 24,
+                        id: "47",
+                        productId: "24",
                         userName: "Rohini Iyer",
                         userImageUrl: "/users/user47.png",
                         rating: 4,
@@ -840,8 +839,8 @@ export const ECommerceStore = signalStore(
                         reviewDate: new Date("2025-03-10")
                     },
                     {
-                        id: 48,
-                        productId: 24,
+                        id: "48",
+                        productId: "24",
                         userName: "Ajit Singh",
                         userImageUrl: "/users/user48.png",
                         rating: 3,
@@ -864,8 +863,8 @@ export const ECommerceStore = signalStore(
                 category: "Home",
                 reviews: [
                     {
-                        id: 49,
-                        productId: 25,
+                        id: "49",
+                        productId: "25",
                         userName: "Neelam Gupta",
                         userImageUrl: "/users/user49.png",
                         rating: 5,
@@ -874,8 +873,8 @@ export const ECommerceStore = signalStore(
                         reviewDate: new Date("2025-01-05")
                     },
                     {
-                        id: 50,
-                        productId: 25,
+                        id: "50",
+                        productId: "25",
                         userName: "Ritu Verma",
                         userImageUrl: "/users/user50.png",
                         rating: 4,
@@ -898,8 +897,8 @@ export const ECommerceStore = signalStore(
                 category: "Home",
                 reviews: [
                     {
-                        id: 51,
-                        productId: 26,
+                        id: "51",
+                        productId: "26",
                         userName: "Rajesh Kumar",
                         userImageUrl: "/users/user51.png",
                         rating: 4,
@@ -908,8 +907,8 @@ export const ECommerceStore = signalStore(
                         reviewDate: new Date("2025-02-11")
                     },
                     {
-                        id: 52,
-                        productId: 26,
+                        id: "52",
+                        productId: "26",
                         userName: "Sonal Mehta",
                         userImageUrl: "/users/user52.png",
                         rating: 3,
@@ -932,8 +931,8 @@ export const ECommerceStore = signalStore(
                 category: "Home",
                 reviews: [
                     {
-                        id: 53,
-                        productId: 27,
+                        id: "53",
+                        productId: "27",
                         userName: "Meena Sharma",
                         userImageUrl: "/users/user53.png",
                         rating: 5,
@@ -942,8 +941,8 @@ export const ECommerceStore = signalStore(
                         reviewDate: new Date("2025-01-25")
                     },
                     {
-                        id: 54,
-                        productId: 27,
+                        id: "54",
+                        productId: "27",
                         userName: "Karan Patel",
                         userImageUrl: "/users/user54.png",
                         rating: 4,
@@ -966,8 +965,8 @@ export const ECommerceStore = signalStore(
                 category: "Home",
                 reviews: [
                     {
-                        id: 55,
-                        productId: 28,
+                        id: "55",
+                        productId: "28",
                         userName: "Anil Verma",
                         userImageUrl: "/users/user55.png",
                         rating: 4,
@@ -976,8 +975,8 @@ export const ECommerceStore = signalStore(
                         reviewDate: new Date("2025-03-05")
                     },
                     {
-                        id: 56,
-                        productId: 28,
+                        id: "56",
+                        productId: "28",
                         userName: "Ritu Sharma",
                         userImageUrl: "/users/user56.png",
                         rating: 3,
@@ -1000,8 +999,8 @@ export const ECommerceStore = signalStore(
                 category: "Home",
                 reviews: [
                     {
-                        id: 57,
-                        productId: 29,
+                        id: "57",
+                        productId: "29",
                         userName: "Sunil Kumar",
                         userImageUrl: "/users/user57.png",
                         rating: 5,
@@ -1010,8 +1009,8 @@ export const ECommerceStore = signalStore(
                         reviewDate: new Date("2025-04-01")
                     },
                     {
-                        id: 58,
-                        productId: 29,
+                        id: "58",
+                        productId: "29",
                         userName: "Pooja Sharma",
                         userImageUrl: "/users/user58.png",
                         rating: 4,
@@ -1034,8 +1033,8 @@ export const ECommerceStore = signalStore(
                 category: "Home",
                 reviews: [
                     {
-                        id: 59,
-                        productId: 30,
+                        id: "59",
+                        productId: "30",
                         userName: "Deepa Nair",
                         userImageUrl: "/users/user59.png",
                         rating: 4,
@@ -1044,8 +1043,8 @@ export const ECommerceStore = signalStore(
                         reviewDate: new Date("2025-02-10")
                     },
                     {
-                        id: 60,
-                        productId: 30,
+                        id: "60",
+                        productId: "30",
                         userName: "Arun Gupta",
                         userImageUrl: "/users/user60.png",
                         rating: 3,
@@ -1059,7 +1058,7 @@ export const ECommerceStore = signalStore(
                 id: "31",
                 name: "Mystery Thriller Novel",
                 description: "Suspense-filled story with twists.",
-                longDescription: "A gripping mystery thriller packed with suspense, unexpected twists, and engaging storytelling that keeps you hooked till the end.",
+                longDescription: "A gripping mystery thriller packed with suspense and unexpected twists.",
                 price: 14.99,
                 imageUrl: "/product_images/product_31.png",
                 rating: 4.8,
@@ -1068,23 +1067,23 @@ export const ECommerceStore = signalStore(
                 category: "Books",
                 reviews: [
                     {
-                        id: 61,
-                        productId: 31,
+                        id: "61",
+                        productId: "31",
                         userName: "Ankit Singh",
                         userImageUrl: "/users/user61.png",
                         rating: 5,
                         title: "Couldn’t put it down!",
-                        comment: "Every chapter ends with a twist. Amazing read.",
+                        comment: "Every chapter ends with a twist.",
                         reviewDate: new Date("2025-03-11")
                     },
                     {
-                        id: 62,
-                        productId: 31,
+                        id: "62",
+                        productId: "31",
                         userName: "Divya Nair",
                         userImageUrl: "/users/user62.png",
                         rating: 4,
                         title: "Very engaging",
-                        comment: "Loved the suspense, but ending felt rushed.",
+                        comment: "Loved the suspense.",
                         reviewDate: new Date("2025-03-15")
                     }
                 ]
@@ -1093,7 +1092,7 @@ export const ECommerceStore = signalStore(
                 id: "32",
                 name: "Science Fiction Adventure",
                 description: "Journey through futuristic worlds.",
-                longDescription: "Explore futuristic worlds and thrilling adventures in this science fiction novel filled with imagination and excitement.",
+                longDescription: "Explore futuristic worlds and thrilling adventures.",
                 price: 18.99,
                 imageUrl: "/product_images/product_32.png",
                 rating: 4.6,
@@ -1102,23 +1101,23 @@ export const ECommerceStore = signalStore(
                 category: "Books",
                 reviews: [
                     {
-                        id: 63,
-                        productId: 32,
+                        id: "63",
+                        productId: "32",
                         userName: "Ravi Kumar",
                         userImageUrl: "/users/user63.png",
                         rating: 5,
                         title: "Mind-blowing concepts",
-                        comment: "The futuristic ideas are fascinating.",
+                        comment: "Futuristic ideas are fascinating.",
                         reviewDate: new Date("2025-02-10")
                     },
                     {
-                        id: 64,
-                        productId: 32,
+                        id: "64",
+                        productId: "32",
                         userName: "Megha Jain",
                         userImageUrl: "/users/user64.png",
                         rating: 4,
                         title: "Great imagination",
-                        comment: "Story is unique and engaging.",
+                        comment: "Story is engaging.",
                         reviewDate: new Date("2025-02-18")
                     }
                 ]
@@ -1127,7 +1126,7 @@ export const ECommerceStore = signalStore(
                 id: "33",
                 name: "Self Improvement Guide",
                 description: "Boost productivity and mindset.",
-                longDescription: "A practical guide to improving productivity, mindset, and personal growth through proven strategies and insights.",
+                longDescription: "Guide to improving productivity and personal growth.",
                 price: 12.99,
                 imageUrl: "/product_images/product_33.png",
                 rating: 4.2,
@@ -1136,23 +1135,23 @@ export const ECommerceStore = signalStore(
                 category: "Books",
                 reviews: [
                     {
-                        id: 65,
-                        productId: 33,
+                        id: "65",
+                        productId: "33",
                         userName: "Suresh Patel",
                         userImageUrl: "/users/user65.png",
                         rating: 4,
                         title: "Helpful tips",
-                        comment: "Easy to follow and practical advice.",
+                        comment: "Practical advice.",
                         reviewDate: new Date("2025-01-20")
                     },
                     {
-                        id: 66,
-                        productId: 33,
+                        id: "66",
+                        productId: "33",
                         userName: "Ananya Das",
                         userImageUrl: "/users/user66.png",
                         rating: 3,
                         title: "Good but basic",
-                        comment: "Useful but not very deep.",
+                        comment: "Useful but simple.",
                         reviewDate: new Date("2025-01-25")
                     }
                 ]
@@ -1161,7 +1160,7 @@ export const ECommerceStore = signalStore(
                 id: "34",
                 name: "World Cuisine Cookbook",
                 description: "Recipes from around the globe.",
-                longDescription: "Discover delicious recipes from around the world with this comprehensive cookbook, perfect for beginners and experts alike.",
+                longDescription: "Discover global recipes with this cookbook.",
                 price: 22.99,
                 imageUrl: "/product_images/product_34.png",
                 rating: 4.7,
@@ -1170,23 +1169,23 @@ export const ECommerceStore = signalStore(
                 category: "Books",
                 reviews: [
                     {
-                        id: 67,
-                        productId: 34,
+                        id: "67",
+                        productId: "34",
                         userName: "Pooja Shah",
                         userImageUrl: "/users/user67.png",
                         rating: 5,
                         title: "Amazing recipes!",
-                        comment: "Tried multiple dishes and they turned out great.",
+                        comment: "Dishes turned out great.",
                         reviewDate: new Date("2025-04-01")
                     },
                     {
-                        id: 68,
-                        productId: 34,
+                        id: "68",
+                        productId: "34",
                         userName: "Kiran Rao",
                         userImageUrl: "/users/user68.png",
                         rating: 4,
                         title: "Very useful",
-                        comment: "Good variety of global dishes.",
+                        comment: "Good variety.",
                         reviewDate: new Date("2025-04-05")
                     }
                 ]
@@ -1195,7 +1194,7 @@ export const ECommerceStore = signalStore(
                 id: "35",
                 name: "History of Civilizations",
                 description: "Explore ancient to modern history.",
-                longDescription: "Dive into the rich history of civilizations from ancient times to modern era with detailed insights and illustrations.",
+                longDescription: "Dive into history from ancient to modern era.",
                 price: 24.99,
                 imageUrl: "/product_images/product_35.png",
                 rating: 4.3,
@@ -1204,18 +1203,18 @@ export const ECommerceStore = signalStore(
                 category: "Books",
                 reviews: [
                     {
-                        id: 69,
-                        productId: 35,
+                        id: "69",
+                        productId: "35",
                         userName: "Arjun Iyer",
                         userImageUrl: "/users/user69.png",
                         rating: 4,
                         title: "Informative",
-                        comment: "Very detailed and well explained.",
+                        comment: "Very detailed.",
                         reviewDate: new Date("2025-03-08")
                     },
                     {
-                        id: 70,
-                        productId: 35,
+                        id: "70",
+                        productId: "35",
                         userName: "Neelam Gupta",
                         userImageUrl: "/users/user70.png",
                         rating: 4,
@@ -1225,9 +1224,7 @@ export const ECommerceStore = signalStore(
                     }
                 ]
             },
-
-            // FITNESS 36–45
-
+             // FITNESS 36–45
             {
                 id: "36",
                 name: "Inspirational Biography",
@@ -1241,8 +1238,8 @@ export const ECommerceStore = signalStore(
                 category: "Books",
                 reviews: [
                     {
-                        id: 71,
-                        productId: 36,
+                        id: "71",
+                        productId: "36",
                         userName: "Manish Yadav",
                         userImageUrl: "/users/user71.png",
                         rating: 5,
@@ -1251,8 +1248,8 @@ export const ECommerceStore = signalStore(
                         reviewDate: new Date("2025-02-05")
                     },
                     {
-                        id: 72,
-                        productId: 36,
+                        id: "72",
+                        productId: "36",
                         userName: "Shreya Kulkarni",
                         userImageUrl: "/users/user72.png",
                         rating: 4,
@@ -1266,7 +1263,7 @@ export const ECommerceStore = signalStore(
                 id: "37",
                 name: "Fantasy Adventure Novel",
                 description: "Magic, dragons, and epic quests.",
-                longDescription: "An epic fantasy adventure filled with magic, mythical creatures, and heroic quests that transport you to another world.",
+                longDescription: "An epic fantasy adventure filled with magic, mythical creatures, and heroic quests.",
                 price: 17.99,
                 imageUrl: "/product_images/product_37.png",
                 rating: 4.6,
@@ -1275,8 +1272,8 @@ export const ECommerceStore = signalStore(
                 category: "Books",
                 reviews: [
                     {
-                        id: 73,
-                        productId: 37,
+                        id: "73",
+                        productId: "37",
                         userName: "Rohit Sen",
                         userImageUrl: "/users/user73.png",
                         rating: 5,
@@ -1285,8 +1282,8 @@ export const ECommerceStore = signalStore(
                         reviewDate: new Date("2025-03-14")
                     },
                     {
-                        id: 74,
-                        productId: 37,
+                        id: "74",
+                        productId: "37",
                         userName: "Isha Kapoor",
                         userImageUrl: "/users/user74.png",
                         rating: 4,
@@ -1300,7 +1297,7 @@ export const ECommerceStore = signalStore(
                 id: "38",
                 name: "Web Development Guide",
                 description: "Learn modern full-stack development.",
-                longDescription: "A complete guide to modern web development covering frontend and backend technologies with practical examples.",
+                longDescription: "A complete guide to modern web development covering frontend and backend technologies.",
                 price: 29.99,
                 imageUrl: "/product_images/product_38.png",
                 rating: 4.7,
@@ -1309,8 +1306,8 @@ export const ECommerceStore = signalStore(
                 category: "Books",
                 reviews: [
                     {
-                        id: 75,
-                        productId: 38,
+                        id: "75",
+                        productId: "38",
                         userName: "Dev Sharma",
                         userImageUrl: "/users/user75.png",
                         rating: 5,
@@ -1319,8 +1316,8 @@ export const ECommerceStore = signalStore(
                         reviewDate: new Date("2025-04-10")
                     },
                     {
-                        id: 76,
-                        productId: 38,
+                        id: "76",
+                        productId: "38",
                         userName: "Ayesha Khan",
                         userImageUrl: "/users/user76.png",
                         rating: 4,
@@ -1334,7 +1331,7 @@ export const ECommerceStore = signalStore(
                 id: "39",
                 name: "Poetry Collection",
                 description: "A collection of modern poems.",
-                longDescription: "A beautifully written collection of modern poetry exploring emotions, life, and creativity.",
+                longDescription: "A beautifully written collection of modern poetry exploring emotions and life.",
                 price: 11.99,
                 imageUrl: "/product_images/product_39.png",
                 rating: 4.1,
@@ -1343,8 +1340,8 @@ export const ECommerceStore = signalStore(
                 category: "Books",
                 reviews: [
                     {
-                        id: 77,
-                        productId: 39,
+                        id: "77",
+                        productId: "39",
                         userName: "Nidhi Verma",
                         userImageUrl: "/users/user77.png",
                         rating: 4,
@@ -1353,8 +1350,8 @@ export const ECommerceStore = signalStore(
                         reviewDate: new Date("2025-01-11")
                     },
                     {
-                        id: 78,
-                        productId: 39,
+                        id: "78",
+                        productId: "39",
                         userName: "Rakesh Gupta",
                         userImageUrl: "/users/user78.png",
                         rating: 3,
@@ -1368,7 +1365,7 @@ export const ECommerceStore = signalStore(
                 id: "40",
                 name: "Travel Explorer Guide",
                 description: "Discover top travel destinations.",
-                longDescription: "Explore the world's best travel destinations with tips, guides, and stunning insights for your next adventure.",
+                longDescription: "Explore the world's best travel destinations with tips and guides.",
                 price: 21.99,
                 imageUrl: "/product_images/product_40.png",
                 rating: 4.4,
@@ -1377,8 +1374,8 @@ export const ECommerceStore = signalStore(
                 category: "Books",
                 reviews: [
                     {
-                        id: 79,
-                        productId: 40,
+                        id: "79",
+                        productId: "40",
                         userName: "Varun Malhotra",
                         userImageUrl: "/users/user79.png",
                         rating: 5,
@@ -1387,8 +1384,8 @@ export const ECommerceStore = signalStore(
                         reviewDate: new Date("2025-03-02")
                     },
                     {
-                        id: 80,
-                        productId: 40,
+                        id: "80",
+                        productId: "40",
                         userName: "Simran Kaur",
                         userImageUrl: "/users/user80.png",
                         rating: 4,
@@ -1402,7 +1399,7 @@ export const ECommerceStore = signalStore(
                 id: "41",
                 name: "Premium Yoga Mat",
                 description: "Non-slip mat for yoga and workouts.",
-                longDescription: "A high-quality non-slip yoga mat designed for comfort and stability. Perfect for yoga, pilates, and workouts.",
+                longDescription: "High-quality non-slip yoga mat for comfort and stability.",
                 price: 24.99,
                 imageUrl: "/product_images/product_41.png",
                 rating: 4.5,
@@ -1411,23 +1408,23 @@ export const ECommerceStore = signalStore(
                 category: "Fitness",
                 reviews: [
                     {
-                        id: 81,
-                        productId: 41,
+                        id: "81",
+                        productId: "41",
                         userName: "Anjali Mehta",
                         userImageUrl: "/users/user81.png",
                         rating: 5,
                         title: "Excellent grip",
-                        comment: "Doesn’t slip at all during yoga sessions.",
+                        comment: "Doesn’t slip at all.",
                         reviewDate: new Date("2025-02-14")
                     },
                     {
-                        id: 82,
-                        productId: 41,
+                        id: "82",
+                        productId: "41",
                         userName: "Rohan Gupta",
                         userImageUrl: "/users/user82.png",
                         rating: 4,
                         title: "Good quality",
-                        comment: "Comfortable and durable mat.",
+                        comment: "Comfortable and durable.",
                         reviewDate: new Date("2025-02-18")
                     }
                 ]
@@ -1436,7 +1433,7 @@ export const ECommerceStore = signalStore(
                 id: "42",
                 name: "Adjustable Dumbbell Set",
                 description: "Perfect for home strength training.",
-                longDescription: "Adjustable dumbbell set that allows you to customize weight levels for effective home workouts and strength training.",
+                longDescription: "Adjustable dumbbell set for customizable workouts.",
                 price: 59.99,
                 imageUrl: "/product_images/product_42.png",
                 rating: 4.7,
@@ -1445,23 +1442,23 @@ export const ECommerceStore = signalStore(
                 category: "Fitness",
                 reviews: [
                     {
-                        id: 83,
-                        productId: 42,
+                        id: "83",
+                        productId: "42",
                         userName: "Vikram Singh",
                         userImageUrl: "/users/user83.png",
                         rating: 5,
                         title: "Very versatile",
-                        comment: "Easy to adjust weights and saves space.",
+                        comment: "Easy to adjust.",
                         reviewDate: new Date("2025-03-20")
                     },
                     {
-                        id: 84,
-                        productId: 42,
+                        id: "84",
+                        productId: "42",
                         userName: "Sneha Joshi",
                         userImageUrl: "/users/user84.png",
                         rating: 4,
                         title: "Solid build",
-                        comment: "Feels sturdy and reliable.",
+                        comment: "Feels sturdy.",
                         reviewDate: new Date("2025-03-25")
                     }
                 ]
@@ -1470,7 +1467,7 @@ export const ECommerceStore = signalStore(
                 id: "43",
                 name: "Foldable Treadmill",
                 description: "Compact treadmill for home workouts.",
-                longDescription: "A foldable treadmill designed for home use with multiple speed settings, compact storage, and smooth performance.",
+                longDescription: "Foldable treadmill with smooth performance.",
                 price: 499.99,
                 imageUrl: "/product_images/product_43.png",
                 rating: 4.4,
@@ -1479,23 +1476,23 @@ export const ECommerceStore = signalStore(
                 category: "Fitness",
                 reviews: [
                     {
-                        id: 85,
-                        productId: 43,
+                        id: "85",
+                        productId: "43",
                         userName: "Kunal Verma",
                         userImageUrl: "/users/user85.png",
                         rating: 4,
                         title: "Great for home",
-                        comment: "Compact and easy to store.",
+                        comment: "Compact design.",
                         reviewDate: new Date("2025-01-30")
                     },
                     {
-                        id: 86,
-                        productId: 43,
+                        id: "86",
+                        productId: "43",
                         userName: "Priyanka Nair",
                         userImageUrl: "/users/user86.png",
                         rating: 5,
                         title: "Smooth performance",
-                        comment: "Runs very smoothly and quietly.",
+                        comment: "Runs quietly.",
                         reviewDate: new Date("2025-02-02")
                     }
                 ]
@@ -1504,7 +1501,7 @@ export const ECommerceStore = signalStore(
                 id: "44",
                 name: "Resistance Bands Kit",
                 description: "Full-body workout bands set.",
-                longDescription: "Complete resistance bands kit for full-body workouts. Suitable for beginners and advanced fitness enthusiasts.",
+                longDescription: "Complete resistance bands kit.",
                 price: 19.99,
                 imageUrl: "/product_images/product_44.png",
                 rating: 4.4,
@@ -1513,23 +1510,23 @@ export const ECommerceStore = signalStore(
                 category: "Fitness",
                 reviews: [
                     {
-                        id: 87,
-                        productId: 44,
+                        id: "87",
+                        productId: "44",
                         userName: "Arjun Patel",
                         userImageUrl: "/users/user87.png",
                         rating: 5,
                         title: "Great value",
-                        comment: "Multiple resistance levels are useful.",
+                        comment: "Multiple resistance levels.",
                         reviewDate: new Date("2025-03-05")
                     },
                     {
-                        id: 88,
-                        productId: 44,
+                        id: "88",
+                        productId: "44",
                         userName: "Neha Singh",
                         userImageUrl: "/users/user88.png",
                         rating: 4,
                         title: "Good for workouts",
-                        comment: "Effective for home training.",
+                        comment: "Effective training.",
                         reviewDate: new Date("2025-03-09")
                     }
                 ]
@@ -1538,7 +1535,7 @@ export const ECommerceStore = signalStore(
                 id: "45",
                 name: "Indoor Exercise Bike",
                 description: "Smooth and quiet cycling experience.",
-                longDescription: "Enjoy a smooth and quiet indoor cycling experience with adjustable resistance and ergonomic design.",
+                longDescription: "Indoor cycling with adjustable resistance.",
                 price: 299.99,
                 imageUrl: "/product_images/product_45.png",
                 rating: 4.3,
@@ -1547,23 +1544,23 @@ export const ECommerceStore = signalStore(
                 category: "Fitness",
                 reviews: [
                     {
-                        id: 89,
-                        productId: 45,
+                        id: "89",
+                        productId: "45",
                         userName: "Rahul Khanna",
                         userImageUrl: "/users/user89.png",
                         rating: 5,
                         title: "Very smooth",
-                        comment: "Silent and comfortable ride.",
+                        comment: "Silent ride.",
                         reviewDate: new Date("2025-04-01")
                     },
                     {
-                        id: 90,
-                        productId: 45,
+                        id: "90",
+                        productId: "45",
                         userName: "Pooja Verma",
                         userImageUrl: "/users/user90.png",
                         rating: 4,
                         title: "Good build",
-                        comment: "Feels sturdy and stable.",
+                        comment: "Stable.",
                         reviewDate: new Date("2025-04-03")
                     }
                 ]
@@ -1581,8 +1578,8 @@ export const ECommerceStore = signalStore(
                 category: "Fitness",
                 reviews: [
                     {
-                        id: 91,
-                        productId: 46,
+                        id: "91",
+                        productId: "46",
                         userName: "Manoj Kumar",
                         userImageUrl: "/users/user91.png",
                         rating: 4,
@@ -1591,8 +1588,8 @@ export const ECommerceStore = signalStore(
                         reviewDate: new Date("2025-02-11")
                     },
                     {
-                        id: 92,
-                        productId: 46,
+                        id: "92",
+                        productId: "46",
                         userName: "Sanya Gupta",
                         userImageUrl: "/users/user92.png",
                         rating: 4,
@@ -1615,8 +1612,8 @@ export const ECommerceStore = signalStore(
                 category: "Fitness",
                 reviews: [
                     {
-                        id: 93,
-                        productId: 47,
+                        id: "93",
+                        productId: "47",
                         userName: "Deepak Yadav",
                         userImageUrl: "/users/user93.png",
                         rating: 5,
@@ -1625,8 +1622,8 @@ export const ECommerceStore = signalStore(
                         reviewDate: new Date("2025-03-22")
                     },
                     {
-                        id: 94,
-                        productId: 47,
+                        id: "94",
+                        productId: "47",
                         userName: "Nikita Sharma",
                         userImageUrl: "/users/user94.png",
                         rating: 4,
@@ -1649,8 +1646,8 @@ export const ECommerceStore = signalStore(
                 category: "Fitness",
                 reviews: [
                     {
-                        id: 95,
-                        productId: 48,
+                        id: "95",
+                        productId: "48",
                         userName: "Rakesh Verma",
                         userImageUrl: "/users/user95.png",
                         rating: 4,
@@ -1659,8 +1656,8 @@ export const ECommerceStore = signalStore(
                         reviewDate: new Date("2025-01-10")
                     },
                     {
-                        id: 96,
-                        productId: 48,
+                        id: "96",
+                        productId: "48",
                         userName: "Priya Singh",
                         userImageUrl: "/users/user96.png",
                         rating: 4,
@@ -1683,8 +1680,8 @@ export const ECommerceStore = signalStore(
                 category: "Fitness",
                 reviews: [
                     {
-                        id: 97,
-                        productId: 49,
+                        id: "97",
+                        productId: "49",
                         userName: "Amit Verma",
                         userImageUrl: "/users/user97.png",
                         rating: 5,
@@ -1693,8 +1690,8 @@ export const ECommerceStore = signalStore(
                         reviewDate: new Date("2025-04-05")
                     },
                     {
-                        id: 98,
-                        productId: 49,
+                        id: "98",
+                        productId: "49",
                         userName: "Meera Iyer",
                         userImageUrl: "/users/user98.png",
                         rating: 4,
@@ -1717,8 +1714,8 @@ export const ECommerceStore = signalStore(
                 category: "Fitness",
                 reviews: [
                     {
-                        id: 99,
-                        productId: 50,
+                        id: "99",
+                        productId: "50",
                         userName: "Rohit Sharma",
                         userImageUrl: "/users/user99.png",
                         rating: 4,
@@ -1727,8 +1724,8 @@ export const ECommerceStore = signalStore(
                         reviewDate: new Date("2025-02-21")
                     },
                     {
-                        id: 100,
-                        productId: 50,
+                        id: "100",
+                        productId: "50",
                         userName: "Kavya Reddy",
                         userImageUrl: "/users/user100.png",
                         rating: 4,
@@ -1745,7 +1742,7 @@ export const ECommerceStore = signalStore(
         user: undefined,
         loading: false,
         selectedProductId: undefined,
-        writeReview:false,
+        writeReview: false,
     }),
     withComputed(({ category, products, wishlistItems, cartItems, selectedProductId }) => ({
         filteredProducts: computed<Product[]>(() => {
@@ -1909,16 +1906,16 @@ export const ECommerceStore = signalStore(
             router.navigate(['/']);
         },
         showWriteReview: () => {
-            patchState(store, {writeReview: true});
+            patchState(store, { writeReview: true });
         },
         hideWriteReview: () => {
-            patchState(store, {writeReview: false});
+            patchState(store, { writeReview: false });
         },
-        addReview: async ({title, comment, rating}: AddReviewParams) => {
-            patchState(store, {loading: true});
+        addReview: async ({ title, comment, rating }: AddReviewParams) => {
+            patchState(store, { loading: true });
             const product = store.products().find((p) => p.id === store.selectedProductId());
-            if (!product){
-                patchState(store, {loading: false});
+            if (!product) {
+                patchState(store, { loading: false });
                 return;
             };
             const review: UserReview = {
@@ -1931,17 +1928,20 @@ export const ECommerceStore = signalStore(
                 userImageUrl: store.user()?.imageUrl || '',
                 reviewDate: new Date(),
             };
-            const updatedProducts = produce(store.products(), (draft) =>{
+            const updatedProducts = produce(store.products(), (draft) => {
                 const index = draft.findIndex((p) => p.id === product.id);
                 draft[index].reviews.push(review);
-                draft[index].rating = 
-                Math.round(
-                    (draft[index].reviews.reduce((acc, r) => acc + r.rating, 0) / 
-                        draft[index].reviews.length) *
+                draft[index].rating =
+                    Math.round(
+                        (draft[index].reviews.reduce((acc, r) => acc + r.rating, 0) /
+                            draft[index].reviews.length) *
                         10,
                     ) / 10;
                 draft[index].reviewCount = draft[index].reviews.length;
             });
+
+            await new Promise((resolve) => setTimeout(resolve, 1000));
+            patchState(store, { loading: false, products: updatedProducts, writeReview: false });
         },
     })),
 );

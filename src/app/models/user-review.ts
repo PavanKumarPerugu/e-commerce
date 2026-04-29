@@ -1,6 +1,6 @@
 export type UserReview = {
-  id: number;
-  productId: number;
+  id: string;          // ✅ change to string
+  productId: string;   // ✅ change to string
   userName: string;
   userImageUrl: string;
   rating: number;
